@@ -1,0 +1,34 @@
+[
+  {
+    "remote":      "github",
+    "repository":  "lge-msm8996/android_device_lge_common",
+    "target_path": "device/lge/common",
+    "branch"     : "cm-14.1"
+  },
+  {
+    "remote":      "github",
+    "repository":  "lineageos/android_kernel_lge_msm8996",
+    "target_path": "kernel/lge/msm8996",
+    "branch"     : "cm-14.1"
+  },
+     "remote":      "github",
+     "repository":  "themuppets/android_vendor_lge",
+     "target_path": "vendor/lge",
+     "branch"     : "cm-14.1"
+  },
+  {
+     "repository" : "DirtyUnicorns/android_vendor_nxp-nfc_opensource_frameworks",
+     "target_path": "vendor/nxp-nfc/opensource/frameworks",
+     "branch"     : "n7x-caf"
+  },
+  {
+     "repository" : "DirtyUnicorns/android_vendor_nxp-nfc_opensource_libnfc-nci",
+     "target_path": "vendor/nxp-nfc/opensource/libnfc-nci",
+     "branch"     : "n7x-caf"
+  },
+  {
+     "repository" : "DirtyUnicorns/android_vendor_nxp-nfc_opensource_Nfc",
+     "target_path": "vendor/nxp-nfc/opensource/Nfc",
+     "branch"     : "n7x-caf"
+ }
+]
