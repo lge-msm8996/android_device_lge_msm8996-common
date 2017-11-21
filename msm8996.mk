@@ -73,7 +73,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml
 
 # Hotword Enrollment
-PRODUCT_COPY_FILES += \
+PRODUCT_PACKAGES += \
     vendor/lge/msm8996-common/proprietary/priv-app/HotwordEnrollment/HotwordEnrollment.apk:system/priv-app/HotwordEnrollment/HotwordEnrollment.apk:PRESIGNED
 
 # Audio
@@ -104,7 +104,8 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    SnapdragonCamera
+    ParanoidCamera \
+    Snap
 
 # Charger
 PRODUCT_PACKAGES += \
@@ -207,6 +208,16 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:system/etc/media_codecs_google_telephony.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:system/etc/media_codecs_google_video.xml
 
+# QPerformance
+PRODUCT_BOOT_JARS += QPerformance
+
+# QC AV Enhancements
+PRODUCT_PACKAGES += \
+    libdashplayer \
+    libqcmediaplayer \
+    qcmediaplayer \
+    libextmedia_jni
+
 # OMX
 PRODUCT_PACKAGES += \
     libc2dcolorconvert \
@@ -249,6 +260,9 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/hals.conf:system/etc/sensors/hals.conf \
+
+# Telephony
+PRODUCT_BOOT_JARS += qti-telephony-common
 
 # Thermal
 PRODUCT_COPY_FILES += \

@@ -38,7 +38,10 @@ inline const char* BtmGetDefaultName()
 
 #define BTM_DEF_LOCAL_NAME BtmGetDefaultName()
 #define BTA_DISABLE_DELAY 1000 /* in milliseconds */
-
+// Disables read remote device feature
+#define MAX_ACL_CONNECTIONS   16
+#define MAX_L2CAP_CHANNELS    16
 #define BLE_VND_INCLUDED  TRUE
-
+// skips conn update at conn completion
+#define BT_CLEAN_TURN_ON_DISABLED 1
 #endif
